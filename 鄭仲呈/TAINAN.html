@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
+
     <style>
         body {
             display: flex;
@@ -30,6 +32,10 @@
 
         header {
             background-image: url(https://thumb.ac-illust.com/bf/bf2946be8b1374d123a9ca244d79e70c_t.jpeg);
+        }
+        .one{
+            text-shadow: 0 0 20px orange;
+            color: coral;
         }
 
         .c {
@@ -49,7 +55,7 @@
 
 
         .top {
-            background-color: #48d1cc;
+            background-color: #fa8072;
             text-align: center;
         }
 
@@ -58,6 +64,12 @@
             display: flex;
             flex-grow: 0.5;
             justify-content: center;
+            background-image: url(https://thumb.ac-illust.com/bf/bf2946be8b1374d123a9ca244d79e70c_t.jpeg);
+        }
+
+        .carousel-item {
+            width: 600px;
+
         }
 
         div.a {
@@ -69,6 +81,12 @@
         main {
             background-color: #ffc0cb;
             flex-grow: 2;
+        }
+
+        .word {
+            text-align: center;
+            color: blue;
+            font-family: 'DM Sans', sans-serif;
         }
 
         .email {
@@ -153,9 +171,10 @@
 
 <body>
     <header>
-        <div><strong>台南美食游</strong></div>
+        <div class="one"><strong>台南美食旅遊日記</strong></div>
         <div class="c">
-            <label class="title">行政區搜尋
+           
+            <label class="title"> <i class="fab fa-earlybirds"></i> 行政區搜尋
                 <select onchange="javascript:location.href=this.value;">
                     <option value="volvo">----</option>
                     <option value="http://www.google.com.tw">白河區</option>
@@ -169,7 +188,7 @@
                     <option value="http://www.google.com.tw">關廟區</option>
                 </select>
             </label>
-            <label class="title">美食種類
+            <label class="title"><i class="fas fa-utensils"></i>美食種類
                 <select onchange="javascript:location.href=this.value;">
                     <option value="volvo">----</option>
                     <option value="http://www.google.com.tw">台式料理</option>
@@ -181,7 +200,7 @@
                     <option value="http://www.google.com.tw">精緻甜點</option>
                 </select>
             </label>
-            <label class="title">觀光景點
+            <label class="title"><i class="fas fa-kiwi-bird"></i>觀光景點
                 <select onchange="javascript:location.href=this.value;">
                     <option value="volvo">----</option>
                     <option value="http://www.google.com.tw">自然景點</option>
@@ -193,7 +212,7 @@
                     <option value="http://www.google.com.tw">網美咖啡廳</option>
                 </select>
             </label>
-            <label class="title">最新文章
+            <label class="title"><i class="far fa-newspaper"></i>最新文章
                 <select onchange="javascript:location.href=this.value;">
                     <option value="volvo">----</option>
                     <option value="http://www.google.com.tw">林媽媽鍋燒意麵</option>
@@ -204,7 +223,7 @@
                     <option value="http://www.google.com.tw">阿堂鹹粥</option>
                 </select>
             </label>
-            <label class="title">住宿推薦
+            <label class="title"><i class="fas fa-hotel"></i>住宿推薦
                 <select onchange="javascript:location.href=this.value;">
                     <option value="volvo">----</option>
                     <option value="http://www.google.com.tw">景大山莊</option>
@@ -267,10 +286,12 @@
                 <div><img
                         src=" https://4.bp.blogspot.com/-VOq2IDz7peY/XML8GBhif5I/AAAAAAAA2kI/X1akO5KykJ4y8YGPpBexVOc4urqVkoE2QCKgBGAs/w1200-h630-p-k-no-nu/index2.jpg"
                         width="500" height="250" alt="無法顯示"></div>
-                <div style="font-size: 5px;">麻豆人早餐就愛這一味</div>
-                <div style="font-size: 5px;">雖然表訂營業時間到12點，但常常會提前賣完而提早打烊</div>
-                <div style="font-size: 5px;">除了內用與外帶，也有販賣DIY料理包</div>
-                <div style="font-size: 5px;">用大骨湯製作湯底，湯頭喝起來清淡中帶有濃郁的鮮味</div>
+                <div class="word">
+                    <div style="font-size: 5px;">麻豆人早餐就愛這一味</div>
+                    <div style="font-size: 5px;">雖然表訂營業時間到12點，但常常會提前賣完而提早打烊</div>
+                    <div style="font-size: 5px;">除了內用與外帶，也有販賣DIY料理包</div>
+                    <div style="font-size: 5px;">用大骨湯製作湯底，湯頭喝起來清淡中帶有濃郁的鮮味</div>
+                </div>
                 <div class="b">
                     <div><img
                             src=" https://4.bp.blogspot.com/-A-zgMcnSRaI/XML8Q6mKa9I/AAAAAAAA2kM/xcSUv3fGencGLKIcBi7RBSWv0VgMDQInwCKgBGAs/s1600/04.JPG"
@@ -290,7 +311,7 @@
                     電話：06-5729689<br>
                     營業時間：6:00 - 12:00<br>
                     <i class="fas fa-arrow-right" style="color: deeppink;"></i>
-                    <a href="https://www.facebook.com/" class="email">連結網址</a>
+                    <a href="D:\鄭仲呈\仲呈trvel\TWpapago\鄭仲呈\TAINAN.html" class="email">連結網址</a>
                 </div>
 
             </div>
@@ -299,10 +320,13 @@
                 <div class="duck2"> 白河鴨頭</div>
                 <div><img src="https://i4.achangpro.com/img.ikiwi.tw/pixnet/cc02e69f59d8a5b9941ca075b0e9d834.jpg"
                         width="500" height="250" alt="無法顯示"></div>
-                <div style="font-size: 5px;">白河限定隱藏版美食</div>
-                <div style="font-size: 5px;">連在地人都讚不絕口</div>
-                <div style="font-size: 5px;">口味清淡，甜而不膩</div>
+                <div class="word">
+                    <div style="font-size: 5px;">白河限定隱藏版美食</div>
+                    <div style="font-size: 5px;">連在地人都讚不絕口</div>
+                    <div style="font-size: 5px;">口味清淡，甜而不膩</div>
+                </div>
                 <div class="b">
+
                     <div><img src=" https://pic.pimg.tw/rabbit77610/1501584562-166636482_n.jpg" width="200" height="100"
                             alt="無法顯示"></div>
                     <div><img src=" https://pic.pimg.tw/rabbit77610/1501584559-2472741087_n.jpg" width="200"
@@ -324,10 +348,11 @@
                     <div class="chicken2">大口香雞排</div>
                     <div><img src=" https://pic.pimg.tw/miekey/1343125556-247353412_n.jpg" width="500" height="250"
                             alt="無法顯示"></div>
-                    <div style="font-size: 5px;">必點炸物-雞肉串</div>
-                    <div style="font-size: 5px;">CP值超很高~~</div>
-                    <div style="font-size: 5px;">新營人從小吃到大!</div>
-                   
+                    <div class="word">
+                        <div style="font-size: 5px;">必點炸物-雞肉串</div>
+                        <div style="font-size: 5px;">CP值超很高~~</div>
+                        <div style="font-size: 5px;">新營人從小吃到大!</div>
+                    </div>
 
                     <div class="b">
                         <div><img src=" https://i.imgur.com/xaU4xQl.jpg" width="200" height="100" alt="無法顯示"></div>
@@ -339,7 +364,7 @@
 
                     </div>
                     <div style="font-size: 1.5rem;">
-                      
+
                         <i class="fas fa-map-marker-alt"></i>
                         台南市新營區大同路14-6號<br>
                         電話：06 637 8910<br>
@@ -354,11 +379,13 @@
                 <div class="fire2">葉麥克炸雞</div>
                 <div><img src=" https://foncc.com/wp-content/uploads/2017/06/20170530-IMG_7603.jpg" width="500"
                         height="250" alt="無法顯示"></div>
-                <div style="font-size: 5px;">廟口大排長龍美食</div>
-                <div style="font-size: 5px;">超特別中藥味炸雞</div>
-                <div style="font-size: 5px;">一天只賣四小時唷～～炸爐一直沒有停過，每樣炸物都是秒殺的</div>
-                <div style="font-size: 5px;">價格很親民，台南必吃銅板美食</div>
-                <div style="font-size: 5px;">口感酥酥脆脆，肉質也很軟嫩，帶有南部人喜歡的甜味香氣</div>
+                <div class="word">
+                    <div style="font-size: 5px;">廟口大排長龍美食</div>
+                    <div style="font-size: 5px;">超特別中藥味炸雞</div>
+                    <div style="font-size: 5px;">一天只賣四小時唷～～炸爐一直沒有停過，每樣炸物都是秒殺的</div>
+                    <div style="font-size: 5px;">價格很親民，台南必吃銅板美食</div>
+                    <div style="font-size: 5px;">口感酥酥脆脆，肉質也很軟嫩，帶有南部人喜歡的甜味香氣</div>
+                </div>
                 <div class="b">
                     <div><img src=" https://i4.achangpro.com/img.decing.tw/pixnet/e960a30298dd63cd4a2a373d0422c879.jpg"
                             width="200" height="100" alt="無法顯示"></div>
@@ -382,9 +409,11 @@
                 <div class="bread2"> 葡吉麵包</div>
                 <div><img src=" https://i.ytimg.com/vi/62VhWN2bEGY/maxresdefault.jpg" width="500" height="250"
                         alt="無法顯示"></div>
-                <div style="font-size: 5px;">超級推薦招牌"羅宋麵包"</div>
-                <div style="font-size: 5px;">人潮洶湧，每次去必定大排長龍</div>
-                <div style="font-size: 5px;">奶露麵包、芝士包也很讚</div>
+                <div class="word">
+                    <div style="font-size: 5px;">超級推薦招牌"羅宋麵包"</div>
+                    <div style="font-size: 5px;">人潮洶湧，每次去必定大排長龍</div>
+                    <div style="font-size: 5px;">奶露麵包、芝士包也很讚</div>
+                </div>
                 <div class="b">
                     <div><img
                             src="https://tse4.mm.bing.net/th?id=OIP.Pt6Y9K0us7mtVHhi1E7P5AHaFI&pid=Api&P=0&w=236&h=164"
@@ -410,9 +439,11 @@
                 <div class="rice2">阿堂鹹粥</div>
                 <div><img src=" https://farm9.staticflickr.com/8005/7495207654_0046a239d7_c.jpg" width="500"
                         height="250" alt="無法顯示"></div>
-                <div style="font-size: 5px;">超級新鮮虱目魚</div>
-                <div style="font-size: 5px;">推薦煎魚肚~~</div>
-                <div style="font-size: 5px;">料好實在、份量十足</div>
+                <div class="word">
+                    <div style="font-size: 5px;">超級新鮮虱目魚</div>
+                    <div style="font-size: 5px;">推薦煎魚肚~~</div>
+                    <div style="font-size: 5px;">料好實在、份量十足</div>
+                </div>
                 <div class="b">
                     <div><img src=" https://farm3.staticflickr.com/2750/4164815596_04e3f9dd9a_b.jpg" width="200"
                             height="100" alt="無法顯示"></div>
