@@ -1,58 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Changhua</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <style>
-    body{
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-        font-size: 3rem;
-        font-family: cursive;
-    }
-    header{
-        background-color: blanchedalmond;
-    }
-    section{
-        background-color: cadetblue;
-        flex-grow: 3;
-        order: 1;
-    }
-    nav{
-        background-color: rgb(255, 255, 255);
-    }
-    article{
-        background-color: chartreuse;
-        flex-grow: 1;
-        order: 0;
-    }
-    aside{
-        background-color: coral;
-        flex-grow: 1;
-        order: 2;
-    }
-    footer{
-        background-color: brown;
-    }
-    .content{
-        flex-grow: 1;
-        display: flex;
-        flex-direction: row;
-    
-    }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 3rem;
+            font-family: cursive;
+        }
+        
+        header {
+            background-color: blanchedalmond;
+            height: 800;
+        }
+        
+        section {
+            background-color: cadetblue;
+            flex-grow: 3;
+            text-align:center;
+        }
+        
+        nav {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        article {
+            background-color: chartreuse;
+            flex-grow: 1;
+        }
+        
+        aside {
+            background-color: coral;
+            flex-grow: 1;
+            text-align:center;
+        }
+        
+        footer {
+            background-color: brown;
+        }
+        
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .top {
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            display: block;
+            bottom: -13px;
+        }
+        
+        #pushtour {
+            width: 100%;
+            position: relative;
+            background-color: #f0f7e6;
+            font-size: 0;
+        }
+        
+        .trip {
+            width: 33.3333333%;
+            display: inline-block;
+        }
     </style>
 </head>
+
 <body>
+
     <body>
         <header>禪心彰化一日遊-體悟心靈祥和</header>
-        <nav><img src="http://tourism.chcg.gov.tw/upload/27/2017081612043794500.jpg" width="100%" height="600"></nav>
-        <section>section</section>
-        <article>article</article>
-        <aside>aside</aside>
-        <footer>footer</footer>
-</body>
+        <nav>
+            <div><img src="http://tourism.chcg.gov.tw/upload/27/2017081612043794500.jpg" width="100%" height="1000"></div>
+            <div class="top">
+                <marquee behavior="scroll" scrollamount="30" scrolldelay="1" width="100%"><img src="https://pbs.twimg.com/media/DADAWB6VwAA4MOI.jpg"></marquee>
+            </div>
+        </nav>
+        <section>彰化旅遊地圖</section>
+        <article><img src="https://tourism.chcg.gov.tw/upload/11/2019120413035548922.jpg" width="100%" height="1000" align="center"></article>
+        <aside>彰化各處美景照</aside>
+        <footer id="pushtour">
+            <div class="trip">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="https://pic.pimg.tw/car0126/1567052946-525963712.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="https://pic.pimg.tw/car0126/1567052941-4189258570.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="https://pic.pimg.tw/car0126/1567052938-2482619368.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trip">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="https://pic.pimg.tw/car0126/1523515967-3030919406.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="https://pic.pimg.tw/car0126/1523515968-1373725791.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="http://mmmfile.emmm.tw/L3/49423/image/2016/4.JPG" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trip">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="http://mmmfile.emmm.tw/L3/1062/image/2017/2.JPG" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="http://mmmfile.emmm.tw/L3/88490/image/14.JPG" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="https://pic.pimg.tw/car0126/1526664097-3738108602.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+<div>
+<div style="text-align: center;">爌肉飯地圖</div>
+<div><img src="https://tourism.chcg.gov.tw/upload/51/2020092510212161059.jpg" width="100%"></div>
+<div><img src="TWpapago\FENG\image\165974942_456431075565642_9000679320742256819_n.gif"></div>
+</div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    </body>
+
 </html>
