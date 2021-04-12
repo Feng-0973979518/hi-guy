@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yunlin</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: 55px 550px 1fr 400px 150px;
+            grid-template-columns: 1.3fr 4fr;
+            grid-template-areas: "nav nav" "header header" "category main" "feedback main" "footer footer";
+            margin: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        nav {
+            grid-area: nav;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header {
+            grid-area: header;
+            background-image: url(https://kikmiao1995.github.io/kiki-web--demo/image/header.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+        }
+        header>div {
+            color: white;
+            font-size: 50px;
+        }
+        /*左上邊欄*/
+        
+        .category {
+            grid-area: category;
+            
+            display: flex;
+            justify-content: left;
+        }
+        li::before {
+            
+        }
+        .type {
+            line-height: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+            
+        .feedback {
+            grid-area: feedback;
+            
+        }
+        /*文章欄*/
+        main {
+            grid-area: main;
+            grid-template-rows: repeat(auto-fit,250px);
+        }
+        .content {
+            height: 250px;
+            width: auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            
+        }
+
+        .text {
+            margin-left: 10px;
+            
+        }
+        
+        footer {
+            grid-area: footer;
+            background-color: rgb(229, 231, 229);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav><a href="https://kikmiao1995.github.io/kiki-web--demo/Exercise/TWpapago/index.html" style="text-decoration: none;color: black;">TAIWAN PAPAGO</a></nav>
+    <header>
+       <div>Hello  Yunlin</div>
+    </header>
+    <aside class="category">
+        <ul class="classify">
+            <li class="type">美食</li>
+            <li class="type">古蹟</li>
+            <li class="type">文化</li>
+            <li class="type">大自然</li>
+            <li class="type">古蹟</li>
+        </ul>
+
+    </aside>
+    <aside class="feedback"></aside>
+    <main>
+        <div class="content">
+            <div class="pic">
+                <img src="https://kikmiao1995.github.io/kiki-web--demo/image/beigang.jpg" height="250px" width="auto" alt="beigang Temple">
+            </div>
+            <div class="article">
+                <div><h2 style="text-align: center;">北港朝天宮</h2></div>
+                <div class="text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp北港朝天宮是台灣本島三百餘座媽祖廟中，歷史最悠久，香火最盛的廟宇，到朝天宮除了虔誠的朝拜之外，更是巧奪天工的藝術品，其內的龍柱、香爐、石獅、木雕，以及彩繪等，令人連連稱讚。此外，每年的農曆元月15日元宵節的花燈比賽，也是此地的重要慶典之一，不容錯過。</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <div class="pic">
+                <img src="https://kikmiao1995.github.io/kiki-web--demo/image/Puppetshow.jpg" height="250px" width="auto" alt="Puppetshow">
+            </div>
+            <div class="article">
+                <div><h2 style="text-align: center;">虎尾布袋戲館</h2></div>
+                <div class="text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp位於雲林虎尾鎮的「雲林布袋戲館」原本為虎尾郡役所，於昭和六年就已建造，於民國８６年列為雲林縣歷史建築，重新規劃為「雲林布袋戲館」，凸顯有布袋戲故鄉之稱的虎尾鎮地方特色。</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <div class="pic">
+                <img src="https://kikmiao1995.github.io/kiki-web--demo/image/Kouhu.jpg" height="250px" width="auto" alt="Kouhu">
+            </div>
+            <div class="article">
+                <div><h2 style="text-align: center;">口湖濱海國家風景區</h2></div>
+                <div class="text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp口湖地區濕地生態園區的節點之一，以濕地間常見物為意象，水鳥振翅飛舞的美麗景象為設計構想，在周圍空曠的草皮地景掀開波瀾。</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <div class="pic">
+                <img src="https://kikmiao1995.github.io/kiki-web--demo/image/CRbridge.jpg" height="250px" width="auto" alt="CRbridge">
+            </div>
+            <div class="article">
+                <div><h2 style="text-align: center;">西螺大橋</h2></div>
+                <div class="text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp橫跨濁水溪的西螺大橋是西螺的標誌，一眼遠眺大紅色的西螺大橋，早期是台灣西部縱貫公路的交通要衝，橋上曾有台糖的火車軌道，因此當時能見到汽車與火車同行的奇觀。 西螺大橋全長1939.03公尺，接近2公里的長度，分31拱，是當時的遠東第一，僅次於舊金山金門大橋的世界第二大橋。</div>
+            </div>
+        </div>
+
+    </main>
+    <footer> ©2021 TWPAPAGO - Yunlin</footer>
+
+
+</body>
+
+</html>
