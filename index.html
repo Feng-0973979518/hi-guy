@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="path/to/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <style>
@@ -23,39 +27,35 @@
             font-size: 3rem;
             font-family: cursive;
         }
-        
+
         header {
             background-color: rgb(255, 255, 255);
         }
-        
+
         h2 {
             font-family: 'Varela Round', sans-serif;
             font-size: 3rem;
         }
-        
+
         .input {
             font-size: 1rem;
             width: 100px;
             text-align: left;
         }
-        
-        .facebook {
-            font-size: 2rem;
-        }
-        
+
         figcaption {
             background-color: white;
             display: flex;
             flex-grow: 1;
             justify-content: center;
         }
-        
+
         div.a {
             display: flex;
             flex-grow: 1;
             flex-direction: row;
         }
-        
+
         main {
             background-color: #4DFFFF;
             flex-grow: 3;
@@ -67,54 +67,57 @@
             justify-content: space-around;
             gap: 20px;
         }
-        
+
         p {
             color: blue;
         }
-        
+
         .c {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 20px;
         }
-        
+
         .t {
             border: black 1px solid;
             height: 500px;
         }
-        
+
         .t:hover {
             box-shadow: 0 5px 30px rgba(0, 0, 0, 0.8);
         }
-        
+
         .p {
             display: flex;
             font-size: 40px;
             justify-content: space-around;
             border-style: outset;
         }
-        
+
         .q {
             flex-grow: 1;
             display: flex;
             flex-direction: row;
         }
-        
+
         .email {
             font-size: 1.5rem;
             color: deeppink;
         }
-        
+
         aside {
             flex-grow: 1;
             width: 50px;
         }
-        
-        footer {
-            background-color: dimgrey;
+
+        .facebook {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            color: darkmagenta;
         }
-        
+
         .font {
             color: rgba(162, 250, 0, 0.986);
             background-image: url(https://cdn.pixabay.com/photo/2018/07/09/12/32/landscape-3526045_960_720.jpg);
@@ -124,7 +127,7 @@
             background-repeat: no-repeat;
             text-shadow: rgba(3, 252, 86, 0.137) 0 -1px 4px, rgba(0, 0, 0, 0.884) 0 -2px 10px, #ff8000 0 -10px 20px, rgb(255, 208, 0) 0 -18px 40px;
         }
-        
+
         .button {
             background-color: #4CAF50;
             /* Green */
@@ -137,7 +140,7 @@
             cursor: pointer;
             border-radius: 12px;
         }
-        
+
         .button:hover {
             background-color: #3e8e41;
         }
@@ -145,64 +148,92 @@
 </head>
 
 <body>
+    <header class="p-1 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <div class="font" style="font-size: 30px;">TWpapaGo 台灣走透透</div>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-white" style="font-size: 17px;">最新消息</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" style="font-size: 17px;">找景點</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" style="font-size: 17px;">找美食</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" style="font-size: 17px;">找住宿</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" style="font-size: 17px;">優惠活動</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="b-example-divider"></div>
+    <!---
     <header>
         <div class="p">
             <div class="font" style="font-size: 50px;">TWpapaGo 台灣走透透</div>
             <div class="button">搜地區</div>
             <div class="button">餐玩樂</div>
             <div class="button">享優惠</div>
-            <div class="facebook">
-                <a href="https://tw.yahoo.com/"><i class="fab fa-line"></i></a>
-                <a href="https://tw.yahoo.com/"><i class="fab fa-facebook"></i></a>
-                <a href="https://tw.yahoo.com/"><i class="fab fa-instagram"></i></a>
-                <a href="https://tw.yahoo.com/"><i class="fas fa-blog"></i></a>
-            </div>
         </div>
-
+  ---->
     </header>
     <div class="q">
         <figcaption>
             <div style="width: 100%;">
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false" data-interval="3500" data-ride="carousel">
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false"
+                    data-interval="3500" data-ride="carousel">
                     <div class="carousel-inner" style="vertical-align: middle;">
                         <div class="carousel-item active">
-                            <img src="http://www.0932505727.tw/upload/pictures/201505211158_006.jpg" width="80" height="600" class="d-block w-100" alt="...">
+                            <img src="http://www.0932505727.tw/upload/pictures/201505211158_006.jpg" width="80"
+                                height="600" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
 
-                            <img src="https://www.ali-nsa.net/zh-tw/image/5732/compressed" width="80" height="600" class="d-block w-100" alt="...">
+                            <img src="https://www.ali-nsa.net/zh-tw/image/5732/compressed" width="80" height="600"
+                                class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://ftcloud.blob.core.windows.net/images/tag_photo/all/tag_216/tag_banner_large/38d9bfdb-4538-44b2-8118-50aede04ce87.jpg" width="80" height="600" class="d-block w-100" alt="...">
+                            <img src="https://ftcloud.blob.core.windows.net/images/tag_photo/all/tag_216/tag_banner_large/38d9bfdb-4538-44b2-8118-50aede04ce87.jpg"
+                                width="80" height="600" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://i0.wp.com/gogoout.com/blog/wp-content/uploads/2018/10/36877418773_0f050c109e_o.jpg?fit=960%2C640&ssl=1" width="80" height="600" class="d-block w-100" alt="...">
+                            <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2021/01/01/realtime/10479167.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600"
+                                width="80" height="600" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-<<<<<<< Updated upstream
-                            <img src="https://www.gotaiwan.com.tw/wp-content/uploads/2015/05/%E8%A5%BF%E5%AD%90%E7%81%A3.jpg" width="80" height="600" class="d-block w-100" alt="...">
-=======
-                            <img src="https://s2.best-wallpaper.net/wallpaper/1920x1200/1307/Taiwan-sea-shore-windmills-sunset-evening-water-reflection-sky-clouds_1920x1200.jpg" width="80" height="600" class="d-block w-100" alt="...">
+                            <img src="https://s2.best-wallpaper.net/wallpaper/1920x1200/1307/Taiwan-sea-shore-windmills-sunset-evening-water-reflection-sky-clouds_1920x1200.jpg"
+                                width="80" height="600" class="d-block w-100" alt="...">                  
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.newton.com.tw/img/4/589/cGcq5CZmlDZiZ2MiJmZ1UDZ2YzMxIDO3QmZzIDZzETNhZGOwMWZwEmZ4ATOv0WZ0l2LjlGcvU2apFmYv02bj5SdklWYi5yYyN3Ztl2LvoDc0RHa.jpg"
+                                width="80" height="600" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.gotaiwan.com.tw/wp-content/uploads/2015/05/%E8%A5%BF%E5%AD%90%E7%81%A3.jpg"
+                                width="80" height="600" class="d-block w-100" alt="...">
 
-                            <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2021/01/01/realtime/10479167.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600" width="80" height="600" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.newton.com.tw/img/4/589/cGcq5CZmlDZiZ2MiJmZ1UDZ2YzMxIDO3QmZzIDZzETNhZGOwMWZwEmZ4ATOv0WZ0l2LjlGcvU2apFmYv02bj5SdklWYi5yYyN3Ztl2LvoDc0RHa.jpg" width="80" height="600" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i0.wp.com/gogoout.com/blog/wp-content/uploads/2018/10/36877418773_0f050c109e_o.jpg?fit=960%2C640&ssl=1" width="80" height="500" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.gotaiwan.com.tw/wp-content/uploads/2015/05/%E8%A5%BF%E5%AD%90%E7%81%A3.jpg" width="80" height="600" class="d-block w-100" alt="...">
 
->>>>>>> Stashed changes
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControlsNoTouching" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselExampleControlsNoTouching" role="button"
+                        data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControlsNoTouching" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselExampleControlsNoTouching" role="button"
+                        data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -222,10 +253,13 @@
                     <i class="fas fa-search"></i>
                     搜尋</button>
             </div>
-            <h2><i class="fas fa-forward" style="color: deeppink;"></i>精選旅遊地區<i class="fas fa-forward fa-rotate-180" style="color: deeppink;"></i></h2>
+            <h2><i class="fas fa-forward" style="color: deeppink;"></i>精選旅遊地區<i class="fas fa-forward fa-rotate-180"
+                    style="color: deeppink;"></i></h2>
             <div class="c">
                 <div class="t">
-                    <a href="https://fneg-10102110.github.io/TWpapago/ZHENG/index.html"><img src="https://www.actwg.com.tw/data/images/202004/1586939712949088147.jpg" width="300" height="300"></a>
+                    <a href="https://fneg-10102110.github.io/TWpapago/ZHENG/index.html"><img
+                            src="https://www.actwg.com.tw/data/images/202004/1586939712949088147.jpg" width="300"
+                            height="300"></a>
                     <h1 style="font-size: 2rem; color: #b8860b;">古都府城--台南 </h1>
                     <p style="font-size: 1rem;"><i class="fas fa-star"></i> 各種特色小吃</p>
                     <p style="font-size: 1rem;"><i class="fas fa-star"></i>充滿各種人情味</p>
@@ -234,7 +268,9 @@
                 </div>
 
                 <div class="t">
-                    <a href="https://fneg-10102110.github.io/TWpapago/FENG/"><img src="https://farm5.staticflickr.com/4343/36362436830_5fe8f31904_b.jpg?v=pixnet-flickr-app-version" width="300" height="300"></a><br><span class="o">
+                    <a href="https://fneg-10102110.github.io/TWpapago/FENG/"><img
+                            src="https://farm5.staticflickr.com/4343/36362436830_5fe8f31904_b.jpg?v=pixnet-flickr-app-version"
+                            width="300" height="300"></a><br><span class="o">
                         <h1 style="font-size: 2rem; color: #b8860b;">體悟心靈祥和--彰化<h1>
                                 <p style="font-size: 1rem;"><i class="fas fa-star"></i>宏偉的八卦山大佛</p>
                                 <p style="font-size: 1rem;"><i class="fas fa-star"></i>出乎意料的隱藏美景</p>
@@ -243,9 +279,10 @@
                 </div>
                 <div class="t">
                     <a href="https://fneg-10102110.github.io/TWpapago/kiki/yunlin.html">
-                        <img src="https://kikmiao1995.github.io/kiki-web--demo/image/header.jpg" width="300" height="300">
+                        <img src="https://kikmiao1995.github.io/kiki-web--demo/image/header.jpg" width="300"
+                            height="300">
                     </a>
-                        <h1 style="font-size: 2rem; color: #b8860b;">台灣的大糧倉<h1>
+                    <h1 style="font-size: 2rem; color: #b8860b;">台灣的大糧倉<h1>
                             <p style="font-size: 1rem;"><i class="fas fa-star"></i>你不知道的雲林</p>
                             <p style="font-size: 1rem;"><i class="fas fa-star"></i>工藝與文化古蹟</p>
                             <p style="font-size: 1rem;"><i class="fas fa-star"></i>在地人才知道的平價小吃</p>
@@ -298,20 +335,17 @@
 
         </main>
         <aside>
-            <img src="https://cdn.pixabay.com/photo/2021/04/05/13/10/cherry-blossoms-6153384_960_720.jpg" width="100%" height="100%">
+            <img src="https://cdn.pixabay.com/photo/2021/04/05/13/10/cherry-blossoms-6153384_960_720.jpg" width="100%"
+                height="100%">
         </aside>
     </div>
     <footer>
-        <div class="row">
-            <div class="col">
-                <i class="fas fa-phone-alt"></i> : 04232794418
-            </div>
-            <div class="co5">
-                <i class="fas fa-envelope"></i> :fefde5466@gmail.ccm
-            </div>
-            <div class="col" style="text-align: right;">
-                聯絡我們
-            </div>
+        <div class="facebook">
+            <a href="https://tw.yahoo.com/"><i class="fab fa-line"></i>Line</a>
+            <a href="https://tw.yahoo.com/"><i class="fab fa-facebook"></i>粉絲團</a>
+            <a href="https://tw.yahoo.com/"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="https://tw.yahoo.com/"><i class="fas fa-blog"></i>部落格</a>
+        </div>
         </div>
 
 
