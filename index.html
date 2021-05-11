@@ -29,7 +29,16 @@
         }
 
         header {
-            background-color: rgb(255, 255, 255);
+            background-color: black;
+           
+        }
+
+        .button {
+            font-size: 2rem;
+        }
+
+        .button:hover {
+            color: blue;
         }
 
         h2 {
@@ -40,8 +49,19 @@
         .input {
             font-size: 1rem;
             width: 100px;
-            text-align: left;
+            text-align: right;
         }
+
+        .sop {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .facebook {
+            font-size: 2rem;
+        }
+
 
         figcaption {
             background-color: white;
@@ -58,7 +78,7 @@
 
         main {
             background-color: #4DFFFF;
-            flex-grow: 3;
+            flex-grow: 4;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -68,9 +88,6 @@
             gap: 20px;
         }
 
-        p {
-            color: blue;
-        }
 
         .c {
             display: flex;
@@ -82,6 +99,8 @@
         .t {
             border: black 1px solid;
             height: 500px;
+            width: 335px;
+            text-align: center;
         }
 
         .t:hover {
@@ -108,28 +127,25 @@
 
         aside {
             flex-grow: 1;
-            width: 50px;
+
+            background-color: white;
+            background-size: 50vh;
+            color: #fff;
+            text-shadow: #474747 3px 5px 2px;
+            text-align: center;
         }
 
-        .facebook {
-            display: flex;
-            text-align: center;
-            justify-content: space-around;
-            color: darkmagenta;
-        }
+
 
         .font {
             color: rgba(162, 250, 0, 0.986);
-            background-image: url(https://cdn.pixabay.com/photo/2018/07/09/12/32/landscape-3526045_960_720.jpg);
-            background-size: 300px 100px;
-            background-position: center;
-            border-radius: 50%;
-            background-repeat: no-repeat;
             text-shadow: rgba(3, 252, 86, 0.137) 0 -1px 4px, rgba(0, 0, 0, 0.884) 0 -2px 10px, #ff8000 0 -10px 20px, rgb(255, 208, 0) 0 -18px 40px;
+            font-size: 50px;
+            text-align: left;
         }
 
         .button {
-            background-color: #4CAF50;
+
             /* Green */
             border: none;
             color: white;
@@ -141,10 +157,50 @@
             border-radius: 12px;
         }
 
-        .button:hover {
-            background-color: #3e8e41;
+        footer {
+
+            background-color: rgb(174, 200, 231);
+        }
+
+        .facebook {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            color: darkmagenta;
+        }
+
+        .photo {
+            float: left;
+            width: 60%;
+        }
+
+        .intro {
+            float: right;
+            width: 40%;
+            font-size: 15px;
+        }
+
+        .card-text {
+            font-size: 5px;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .bd-placeholder-img-lg {
+            font-size: 2.5rem;
+        }
+
+        .nav-link {
+            font-size: 2rem;
         }
     </style>
+
 </head>
 
 <body>
@@ -158,7 +214,7 @@
                 </a>
                 <div class="font" style="font-size: 30px;">TWpapaGo 台灣走透透</div>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-white" style="font-size: 17px;">最新消息</a></li>
+                    <li><a href="/new" class="nav-link px-2 text-white" style="font-size: 17px;">最新消息</a></li>
                     <li><a href="#" class="nav-link px-2 text-white" style="font-size: 17px;">找景點</a></li>
                     <li><a href="#" class="nav-link px-2 text-white" style="font-size: 17px;">找美食</a></li>
                     <li><a href="#" class="nav-link px-2 text-white" style="font-size: 17px;">找住宿</a></li>
@@ -171,24 +227,15 @@
                 </form>
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-warning">Sign-up</button>
+                    <button type="button" class="btn btn-outline-light me-2"><a href="/user">Login</a></button>
+                    <button type="button" class="btn btn-warning"><a href="/register">Sign-up</a></button>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="b-example-divider"></div>
-    <!---
-    <header>
-        <div class="p">
-            <div class="font" style="font-size: 50px;">TWpapaGo 台灣走透透</div>
-            <div class="button">搜地區</div>
-            <div class="button">餐玩樂</div>
-            <div class="button">享優惠</div>
-        </div>
-  ---->
-    </header>
+
     <div class="q">
         <figcaption>
             <div style="width: 100%;">
@@ -209,22 +256,29 @@
                                 width="80" height="600" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2021/01/01/realtime/10479167.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600"
+                            <img src="https://i0.wp.com/gogoout.com/blog/wp-content/uploads/2018/10/36877418773_0f050c109e_o.jpg?fit=960%2C640&ssl=1"
                                 width="80" height="600" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://s2.best-wallpaper.net/wallpaper/1920x1200/1307/Taiwan-sea-shore-windmills-sunset-evening-water-reflection-sky-clouds_1920x1200.jpg"
-                                width="80" height="600" class="d-block w-100" alt="...">                  
+
+                            <img src="https://www.gotaiwan.com.tw/wp-content/uploads/2015/05/%E8%A5%BF%E5%AD%90%E7%81%A3.jpg"
+                                width="80" height="600" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
                             <img src="https://www.newton.com.tw/img/4/589/cGcq5CZmlDZiZ2MiJmZ1UDZ2YzMxIDO3QmZzIDZzETNhZGOwMWZwEmZ4ATOv0WZ0l2LjlGcvU2apFmYv02bj5SdklWYi5yYyN3Ztl2LvoDc0RHa.jpg"
                                 width="80" height="600" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
+                            <img src="https://i0.wp.com/gogoout.com/blog/wp-content/uploads/2018/10/36877418773_0f050c109e_o.jpg?fit=960%2C640&ssl=1"
+                                width="80" height="600" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
                             <img src="https://www.gotaiwan.com.tw/wp-content/uploads/2015/05/%E8%A5%BF%E5%AD%90%E7%81%A3.jpg"
                                 width="80" height="600" class="d-block w-100" alt="...">
-
-
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://s2.best-wallpaper.net/wallpaper/1920x1200/1307/Taiwan-sea-shore-windmills-sunset-evening-water-reflection-sky-clouds_1920x1200.jpg"
+                                width="80" height="600" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControlsNoTouching" role="button"
@@ -241,23 +295,57 @@
                 </div>
 
             </div>
-
-
         </figcaption>
     </div>
     <div class="a">
+        <aside>
+        </aside>
         <main>
-            <div class="input">
-                旅遊城市: <input type=”text” value="請輸入關鍵字"> 旅遊景點: <input type=”text” value=請輸入關鍵字 />
-                <button style="background-color: pink;">
-                    <i class="fas fa-search"></i>
-                    搜尋</button>
+            <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                    data-target="#myModal">疫情宣導</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">公共場合宣導</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p style="font-size: 18px;">
+                                    包含「醫療照護、公共運輸、民生消費、教育學習、觀展觀賽、休閒娛樂、宗教祭祀、洽公機關（構）」等八大類高感染傳播風險場域（指不易保持社交距離，會近距離接觸不特定人，可能傳播COVID-19之室內場所），要求進入該類場所活動的民眾佩戴口罩，除了有助於防範COVID-19之外，對於其他各類經由飛沫、空氣傳播之疾病也能發揮防護效果。
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="golf">
+                <div class="photo"><iframe width="560" height="315" src="https://www.youtube.com/embed/H_ZTMWaYq5w"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="intro">
+                        <h3>台灣美麗的寶島</h3>
+                        <p>
+                        「你，會用什麼方法來認識台灣？」<br>
+                        台灣小而美麗，每一寸土地上都有獨一無二的風景，或厚重磅礴，或文藝清新，或明媚燦爛，只等你用眼睛，去發現這份無止境的美。
+                        說起台灣，很多人都會有種特別的情愫，歌聲中的鹿港小鎮，千與千尋的原型街道，101大樓，美麗的摩天輪，阿里山上的姑娘，又或是懷著一顆吃貨的心···
+                        台北小住，走街串巷，台北-台中-南投-嘉義-高雄-墾丁-台東-花蓮，隨性而停，吹一吹海風，看日升日落。
+                    </p>
+                </div>
+            </div>
+
             <h2><i class="fas fa-forward" style="color: deeppink;"></i>精選旅遊地區<i class="fas fa-forward fa-rotate-180"
                     style="color: deeppink;"></i></h2>
             <div class="c">
                 <div class="t">
-                    <a href="https://fneg-10102110.github.io/TWpapago/ZHENG/index.html"><img
+                    <a href="http://127.0.0.1:5000/zhong"><img
                             src="https://www.actwg.com.tw/data/images/202004/1586939712949088147.jpg" width="300"
                             height="300"></a>
                     <h1 style="font-size: 2rem; color: #b8860b;">古都府城--台南 </h1>
@@ -268,7 +356,7 @@
                 </div>
 
                 <div class="t">
-                    <a href="https://fneg-10102110.github.io/TWpapago/FENG/"><img
+                    <a href="http://127.0.0.1:5000/FENG"><img
                             src="https://farm5.staticflickr.com/4343/36362436830_5fe8f31904_b.jpg?v=pixnet-flickr-app-version"
                             width="300" height="300"></a><br><span class="o">
                         <h1 style="font-size: 2rem; color: #b8860b;">體悟心靈祥和--彰化<h1>
@@ -278,7 +366,7 @@
 
                 </div>
                 <div class="t">
-                    <a href="https://fneg-10102110.github.io/TWpapago/kiki/yunlin.html">
+                    <a href="http://127.0.0.1:5000/yunlin">
                         <img src="https://kikmiao1995.github.io/kiki-web--demo/image/header.jpg" width="300"
                             height="300">
                     </a>
@@ -287,6 +375,7 @@
                             <p style="font-size: 1rem;"><i class="fas fa-star"></i>工藝與文化古蹟</p>
                             <p style="font-size: 1rem;"><i class="fas fa-star"></i>在地人才知道的平價小吃</p>
                 </div>
+
                 <div class="t"><img
                         src="https://www.travels.taxi/wp-content/uploads/2019/05/mainBanner-2-1-1080x675.jpg"
                         width="300" height="300"></a>
@@ -335,8 +424,6 @@
 
         </main>
         <aside>
-            <img src="https://cdn.pixabay.com/photo/2021/04/05/13/10/cherry-blossoms-6153384_960_720.jpg" width="100%"
-                height="100%">
         </aside>
     </div>
     <footer>
@@ -345,7 +432,6 @@
             <a href="https://tw.yahoo.com/"><i class="fab fa-facebook"></i>粉絲團</a>
             <a href="https://tw.yahoo.com/"><i class="fab fa-instagram"></i>instagram</a>
             <a href="https://tw.yahoo.com/"><i class="fas fa-blog"></i>部落格</a>
-        </div>
         </div>
 
 
@@ -378,6 +464,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>
