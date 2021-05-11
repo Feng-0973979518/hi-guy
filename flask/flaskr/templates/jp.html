@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五秒之後自動跳轉</title>
+    <style>
+        div{
+            font-size: 16px;
+            background-color: rgb(255, 255, 255);
+            height: 50px;
+            width: 300px;
+            text-align: center;
+            line-height: 50px;
+            margin: auto ;
+            margin-top: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        var div = document.querySelector('div');
+        var t = 5;
+        fn();
+        setInterval(fn, 1000);
+        function fn() {
+            if (t === 0){
+            location.href = 'https://www.google.com';
+        }    
+            div.innerHTML = '您已登入，將在'+t+'秒後跳轉至新頁面';
+            t--;
+        }
+        <a href="https://www.google.com">您也可以按此直接跳轉</a>        
+    </script>
+</body>
+</html>
+
