@@ -173,13 +173,13 @@
 
         .photo {
             float: left;
-            width: 60%;
+            width: 50%;
         }
 
         .intro {
             float: right;
-            width: 40%;
-            font-size: 15px;
+            width: 50%;
+            font-size: 20px;
         }
 
         .card-text {
@@ -336,6 +336,21 @@
             /*讓標題與連結中間有空隙*/
 
         }
+        #myDIV {
+            width: 100%;
+            text-align: left;
+            margin-top: 5px;
+          }
+          .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
     </style>
 
 </head>
@@ -470,10 +485,11 @@
                 <div class="intro">
                         <h3>台灣美麗的寶島</h3>
                         <p>
-                        「你，會用什麼方法來認識台灣？」<br>
+                        <button class="button" onclick="myFunction()">「你，會用什麼方法來認識台灣？」</button>
+                        <div id="myDIV">
                         台灣小而美麗，每一寸土地上都有獨一無二的風景，或厚重磅礴，或文藝清新，或明媚燦爛，只等你用眼睛，去發現這份無止境的美。
                         說起台灣，很多人都會有種特別的情愫，歌聲中的鹿港小鎮，千與千尋的原型街道，101大樓，美麗的摩天輪，阿里山上的姑娘，又或是懷著一顆吃貨的心···
-                        台北小住，走街串巷，台北-台中-南投-嘉義-高雄-墾丁-台東-花蓮，隨性而停，吹一吹海風，看日升日落。
+                        台北小住，走街串巷，台北-台中-南投-嘉義-高雄-墾丁-台東-花蓮，隨性而停，吹一吹海風，看日升日落。</div>
                     </p>
                 </div>
             </div>
@@ -632,6 +648,16 @@
             });
         });
     </script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
 </body>
 
 </html>
