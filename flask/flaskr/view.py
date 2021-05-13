@@ -57,3 +57,7 @@ def logout():
 @app.route('/userinfo')
 def userinfo():
     return 'Here is UserINFO'
+
+@app.route('/text')
+def text():
+    return render_template('text.html')
